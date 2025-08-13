@@ -1,17 +1,21 @@
-# Maze-Navigator
+# Maze-Navigator 🧭
 This project implements a 3D maze navigation system with smooth camera control, wall collision prevention, A* pathfinding, and automatic path-following.  
 The program displays both a main camera (left screen) and a top-down minimap (right screen), ensuring consistent camera orientation in both views.
 
 <br>
 
-## Features
+## 📸 Preview
+![Image](https://github.com/user-attachments/assets/83bd48b3-a7c3-4f21-ad82-d72d2b2d5eff)
+
+<br>
+
+## ✨ Features
+### 🎮 Controls
 - **A / D keys** — Rotate camera left/right (affects both main view and minimap camera)
 - **W / S keys** — Move forward/backward, with wall collision prevention
 - **Q key** — Use A* algorithm to find the shortest path to the goal and visualize it as a red line
 - **SpaceBar** — Automatically move along the found path with smooth rotation at corners
-<br>
-
-## A* Pathfinding Overview
+### 🧠 A* Pathfinding Overview
 The **A\*** algorithm finds the shortest path from the start node to the goal node by minimizing:<div align="center">
 f(n) = g(n) + h(n)
 </div>
@@ -22,7 +26,7 @@ f(n) = g(n) + h(n)
 
 <br>
 
-## Implementation Details
+## 🛠 Implementation Details
 
 ### 1. Camera Rotation (A/D keys)
 - Used a `cameraYaw` variable to store rotation angle
@@ -51,7 +55,7 @@ f(n) = g(n) + h(n)
 
 <br>
 
-## Troubleshooting
+## 🚀 Troubleshooting
 
 ### 1. Incorrect Pathfinding
 - **Issue:** Initial A* implementation used simple vectors for open/closed lists without ordering by priority
